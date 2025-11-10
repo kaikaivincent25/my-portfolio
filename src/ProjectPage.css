@@ -1,0 +1,131 @@
+.projects-page {
+  background-color: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-hero {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d")
+    center/cover no-repeat;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.projects-hero .hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.projects-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.projects-hero p {
+  color: #b1bac4;
+  font-size: 1.1rem;
+}
+
+.projects-gallery {
+  flex: 1;
+  padding: 60px 5%;
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.project-card {
+  background: #161b22;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(56, 139, 253, 0.2);
+}
+
+.image-wrapper {
+  height: 200px;
+  background: #0d1117;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 1rem 1.5rem;
+}
+
+.project-details h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #58a6ff;
+}
+
+.project-details .desc {
+  font-size: 0.95rem;
+  color: #b1bac4;
+  margin-bottom: 0.5rem;
+}
+
+.project-details .stack {
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #21262d;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.view-btn {
+  background-color: #58a6ff;
+  color: #fff;
+}
+
+.view-btn:hover {
+  background-color: #1f6feb;
+}
+
+.live-btn {
+  background: none;
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+}
+
+.live-btn:hover {
+  background-color: #58a6ff;
+  color: #fff;
+}

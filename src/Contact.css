@@ -1,0 +1,112 @@
+/* General Layout */
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d1117, #1c1f26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 80px; /* top offset for header */
+}
+
+/* Card Design */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00e6b8;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.intro-text {
+  text-align: center;
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #bfbfbf;
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00e6b8;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00e6b8, #0077ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00c8a5, #0066e0);
+  transform: translateY(-2px);
+}
+
+/* Messages */
+.success {
+  text-align: center;
+  color: #00ffbf;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.error {
+  text-align: center;
+  color: #ff4d4d;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+}
