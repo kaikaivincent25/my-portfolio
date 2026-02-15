@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter, FaGlobe } from "react-icons/fa";
 import "./Footer.css";
 
-//const API_BASE = "https://portfolio-backend-aapr.onrender.com/api";
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = "https://portfolio-backend-aapr.onrender.com/api";
+//const API_BASE = process.env.REACT_APP_API_BASE;
 
 const Footer = () => {
   const [profile, setProfile] = useState(null);
