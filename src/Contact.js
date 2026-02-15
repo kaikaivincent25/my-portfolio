@@ -3,7 +3,8 @@ import "./Contact.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const API_BASE = "https://portfolio-backend-aapr.onrender.com/api/contacts/";
+//const API_BASE = "https://portfolio-backend-aapr.onrender.com/api/contacts/";
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 const Contact = () => {
   const [formData, setFormData] = useState({

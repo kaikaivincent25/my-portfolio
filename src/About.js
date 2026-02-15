@@ -4,7 +4,8 @@ import "./About.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const API_BASE = "https://portfolio-backend-aapr.onrender.com//api"; // adjust if needed
+//const API_BASE = "https://portfolio-backend-aapr.onrender.com//api"; // adjust if needed
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 const About = () => {
   const [profile, setProfile] = useState(null);
