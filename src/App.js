@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./LandingPage";
 import ProjectDetails from "./ProjectDetails";
@@ -11,6 +11,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          {/* first page to load */}
+          <Route path="/" element={ <Navigate to="/home" replace />} />
           {/* Home / landing page */}
           <Route path="/home" element={<LandingPage />} />
 

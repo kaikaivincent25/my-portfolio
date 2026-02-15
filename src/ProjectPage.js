@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://portfolio-backend-aapr.onrender.com/api";
 
 const ProjectPage = () => {
   const [projects, setProjects] = useState([]);

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://portfolio-backend-aapr.onrender.com/api";
 
 const LandingPage = () => {
   const [profile, setProfile] = useState(null);

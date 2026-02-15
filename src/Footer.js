@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter, FaGlobe } from "react-icons/fa";
 import "./Footer.css";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://portfolio-backend-aapr.onrender.com/api";
 
 const Footer = () => {
   const [profile, setProfile] = useState(null);

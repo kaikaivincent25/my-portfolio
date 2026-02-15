@@ -4,7 +4,7 @@ import "./About.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const API_BASE = "http://127.0.0.1:8000/api"; // adjust if needed
+const API_BASE = "https://portfolio-backend-aapr.onrender.com//api"; // adjust if needed
 
 const About = () => {
   const [profile, setProfile] = useState(null);
